@@ -1,0 +1,1 @@
+Get-Content rs-config.js | mongo --port 27100

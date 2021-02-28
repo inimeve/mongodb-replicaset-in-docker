@@ -1,0 +1,1 @@
+mongo --port 27100 < rs-config.js

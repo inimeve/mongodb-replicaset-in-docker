@@ -1,19 +1,19 @@
 version: "3.9"
 services:
   mongo-rs01:
-    container_name: mongo1
+    container_name: mongo-rs01
     image: mongo
     command: mongod --bind_ip_all --replSet rs0
     ports:
       - "27100:27017"
   mongo-rs02:
-    container_name: mongo2
+    container_name: mongo-rs02
     image: mongo
     command: mongod --bind_ip_all --replSet rs0
     ports:
       - "27101:27017"
   mongo-rs03:
-    container_name: mongo3
+    container_name: mongo-rs03
     image: mongo
     command: mongod --bind_ip_all --replSet rs0
     ports:
